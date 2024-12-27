@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         //   scaffoldBackgroundColor: Colors.lime[50],
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: SplashScreen(),
+      home: RestaurantDetailPage(),
 
     );
   }
