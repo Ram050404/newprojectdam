@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../home/HomePage.dart';
+
 class RestaurantDetailPage extends StatefulWidget {
   const RestaurantDetailPage({Key? key}) : super(key: key);
 
@@ -73,7 +75,13 @@ class _RestaurantDetailPageState extends State<RestaurantDetailPage> {
                               backgroundColor: Colors.white,
                               child: IconButton(
                                 icon: Icon(Icons.arrow_back, color: Colors.lime[800]),
-                                onPressed: () => Navigator.pop(context),
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => HomePage()),
+                                  );
+                                },
+
                               ),
                             ),
                             Row(
