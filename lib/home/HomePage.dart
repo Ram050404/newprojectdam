@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
+import 'package:newproject/account/LoginPage.dart';
 import 'package:newproject/categories/All.dart';
 import 'package:newproject/categories/Cafeteria.dart';
 import 'package:newproject/categories/Fastfood.dart';
@@ -69,7 +70,17 @@ class  HomePage extends StatelessWidget {
                 ),
                //
                 // SizedBox(width: 100,),
-                Icon(Icons.account_circle, size: 40,),
+              //  Icon(Icons.account_circle, size: 40,),
+                IconButton(
+                  icon: Icon(Icons.account_circle, size: 40),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoginPage()),
+                    );
+                  },
+                ),
+
 
               ],
             ),
