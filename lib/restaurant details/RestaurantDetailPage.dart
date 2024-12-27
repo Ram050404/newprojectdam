@@ -159,7 +159,7 @@ class _RestaurantDetailPageState extends State<RestaurantDetailPage> {
                     ),
                   ],
                 ),
-                // Spacing to account for overlapped card
+               
                 const SizedBox(height: 100),
                 // Rest of the content
                 Padding(
